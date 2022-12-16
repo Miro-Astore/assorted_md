@@ -11,7 +11,7 @@ proc  srender {{out_name} {x} {y}} {
 
 #	render  snapshot  $out_name.tga display $out_name.tga
 	#sleep 10 
-	render  Tachyon  $out_name "/usr/local/lib/vmd/tachyon_LINUXAMD64 -trans_vmd -aasamples 12 %s -format Targa -res $x $y -o %s.tga; convert %s.tga %s.png"
+	render  Tachyon  $out_name "/home/miro/Software/vmd/vmd/tachyon_LINUXAMD64 -trans_vmd -aasamples 12 %s -format Targa -res $x $y -o %s.tga; convert %s.tga %s.png"
 	display resize $old_x $old_y 
 	save_state $out_name.vmd
 }
